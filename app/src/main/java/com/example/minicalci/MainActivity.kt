@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 res.setText("Your answer is $var6");
 
             } catch (e: NumberFormatException) {
-                res.text = "Invalid input. Please enter valid numbers."
+                res.text = "Enter valid numbers."
 
             }
         }
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                     var var6 = var4 - var5
                     res.setText("Your answer is $var6");
                 } catch (e: NumberFormatException) {
-                    res.text = "Invalid input. Please enter valid numbers."
+                    res.text = "Enter valid numbers."
                 }}
                 multiply.setOnClickListener{
                 try {
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                     var var6 = var4 * var5
                     res.setText("Your answer is $var6");
                 } catch (e: NumberFormatException) {
-                    res.text = "Invalid input. Please enter valid numbers."
+                    res.text = "Enter valid numbers."
                 }}
 
                 divide.setOnClickListener {
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                         var var6 = var4 / var5
                         res.setText("Your answer is $var6");
                     } catch (e: NumberFormatException) {
-                        res.text = "Invalid input. Please enter valid numbers."
+                        res.text = "Enter valid numbers."
                     }
                 }
 
