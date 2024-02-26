@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +16,9 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20dp"
+        android:paddingVertical="20dp"
         android:text=":)...." />
+
 
 
 
@@ -43,18 +46,51 @@
         android:ems="10"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add" />
+        android:paddingVertical="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            app:srcCompat="@drawable/plus" />
+        <ImageView
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            app:srcCompat="@drawable/subtract" />
+        <ImageView
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            app:srcCompat="@drawable/multiply" />
+        <ImageView
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            app:srcCompat="@drawable/divide" />
 
-    <Button
-        android:id="@+id/clearbutton"
+
+
+
+
+       </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Clear" />
+        android:paddingHorizontal="20dp"
+        app:srcCompat="@drawable/clear" />
 
 
 

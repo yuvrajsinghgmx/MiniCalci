@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -21,33 +22,71 @@ class MainActivity : AppCompatActivity() {
     fun adding(){
         var var1 = findViewById<EditText>(R.id.Number1)
         var var2 = findViewById<EditText>(R.id.Number2)
-        var var3 = findViewById<Button>(R.id.button)
-        var var4 = findViewById<Button>(R.id.clearbutton)
+        var var3 = findViewById<ImageView>(R.id.plus)
+        var subtract = findViewById<ImageView>(R.id.subtract)
+        var multiply = findViewById<ImageView>(R.id.multiply)
+        var divide = findViewById<ImageView>(R.id.divide)
+        var var4 = findViewById<ImageView>(R.id.clear)
         var res = findViewById<TextView>(R.id.textView)
 
-        var3.setOnClickListener{
-            var var4=var1.text.toString().toInt()
-            var var5= var2.text.toString().toInt()
-            var var6= var4+var5
-            res.setText("Your answer is $var6");
 
+        var3.setOnClickListener {
+
+            try {
+
+
+                var var4 = var1.text.toString().toInt()
+                var var5 = var2.text.toString().toInt()
+                var var6 = var4 + var5
+                res.setText("Your answer is $var6");
+
+            } catch (e: NumberFormatException) {
+                res.text = "Invalid input. Please enter valid numbers."
+
+            }
+        }
+            subtract.setOnClickListener {
+                try {
+                    var var4 = var1.text.toString().toInt()
+                    var var5 = var2.text.toString().toInt()
+                    var var6 = var4 - var5
+                    res.setText("Your answer is $var6");
+                } catch (e: NumberFormatException) {
+                    res.text = "Invalid input. Please enter valid numbers."
+                }}
+                multiply.setOnClickListener{
+                try {
+                    var var4 = var1.text.toString().toInt()
+                    var var5 = var2.text.toString().toInt()
+                    var var6 = var4 * var5
+                    res.setText("Your answer is $var6");
+                } catch (e: NumberFormatException) {
+                    res.text = "Invalid input. Please enter valid numbers."
+                }}
+
+                divide.setOnClickListener {
+                    try {
+                        var var4 = var1.text.toString().toFloat()
+                        var var5 = var2.text.toString().toFloat()
+                        var var6 = var4 / var5
+                        res.setText("Your answer is $var6");
+                    } catch (e: NumberFormatException) {
+                        res.text = "Invalid input. Please enter valid numbers."
+                    }
+                }
+
+                var4.setOnClickListener {
+                    var1.setText("");
+                    var2.setText("");
+                    res.setText("(●'◡'●)")
+
+                    Toast.makeText(this, "Good TO go now!", Toast.LENGTH_SHORT).show()
+
+
+            }
+
+
+            }
 
 
         }
-
-        var4.setOnClickListener {
-            var1.setText("");
-            var2.setText("");
-            res.setText("(●'◡'●)")
-
-            Toast.makeText(this, "Good TO go now!", Toast.LENGTH_SHORT).show()
-
-
-        }
-
-
-
-    }
-
-
-}
