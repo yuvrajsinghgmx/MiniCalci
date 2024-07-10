@@ -1,7 +1,8 @@
 # MiniCalci
 
 <img src="Screenshots/splash.jpg" alt="Home Screen" height="300"/>
-
+  More Screenshots below. 👇
+ 
 MiniCalci is a simple yet elegant calculator application built using Kotlin. It allows you to perform basic arithmetic operations with a user-friendly interface.
 
 ## Features
@@ -54,3 +55,5 @@ Contributions are what make the open-source community such an amazing place to l
     <td><img src="Screenshots/dark_screen1.jpg" alt="Dark Screen 1" width="98%"/></td>
   </tr>
 </table>
+
+#### Fork it!
