@@ -11,12 +11,6 @@ MiniCalci is a simple yet elegant calculator application built using Kotlin. It 
 - Easy-to-use number input
 - Real-time calculation updates
 
-## Screenshots
-
-### Home Screen & Calculator Screen
-
-|<img src="Screenshots/screen1.jpg" alt="Home Screen" width="48%"/>|<img align="right" src="Screenshots/screen2.jpg" alt="Home Screen" width="48%"/>|
-
 ## Installation
 
 To get a local copy up and running, follow these simple steps:
@@ -48,6 +42,15 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## More Screenshots
+## Screenshots
 
-|<img src="Screenshots/screen3.jpg" alt="Home Screen" width="48%"/>|<img align="right" src="Screenshots/dark_screen1.jpg" alt="Home Screen" width="48%"/>|
+<table>
+  <tr>
+    <td><img src="Screenshots/screen1.jpg" alt="Screen 1" width="98%"/></td>
+    <td><img src="Screenshots/screen2.jpg" alt="Screen 2" width="98%"/></td>
+  </tr>
+  <tr>
+    <td><img src="Screenshots/screen3.jpg" alt="Screen 3" width="98%"/></td>
+    <td><img src="Screenshots/dark_screen1.jpg" alt="Dark Screen 1" width="98%"/></td>
+  </tr>
+</table>
